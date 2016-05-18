@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+	<head>
+		<title>Caravana Latinoware Goiás</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/responsiveslides.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+
+		<link href="css/ngDialog.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/ngDialog-theme-default.min.css" rel="stylesheet" type="text/css" media="all">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Latinoware Software Livre Cerveja Festa Bebida" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+		<script src="js/angular-table.min.js"></script>
+		<script src="js/ngDialog.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="app.js"></script>
+		<script type="text/ng-template" id="templateId">
+			<h1>Template heading</h1>
+			<p>Content goes here</p>
+		</script>
+	</head>
+	<body>
+		<!--start-wrap-->
+		<div class="header">
+			<div class="container">
+				<!--start-header-->
+				<!--start-logo-->
+				<div class="logo">
+					<img src="images/logo-caravana.png" style = "width:120px;height:120px">
+				</div>
+				<!--End-logo-->
+				<!--start-top-nav-->
+				<div class="top-search-social-nav">
+					<!--<audio controls="true" autoplay="true" loop="true" preload="auto" style="width: 96px;" >-->
+						<!--<source src="music/fastcar.mp3" type="audio/mpeg">-->
+					<!--</audio>-->
+				</div>
+				<div class="clearfix"> </div>
+				<!--End-top-nav-->
+			</div>
+		</div>
+			<!--End-header-->		
+		<div class="top-nav">
+			<div class="container">
+				<div class="navbar-header">
+	   			 	<button type="button" class="navbar-toggle collapsed" >
+	                	<span class="sr-only">Navegação</span>
+	                	<span class="icon-bar"></span>
+	                	<span class="icon-bar"></span>
+	                	<span class="icon-bar"></span>
+                	</button>
+              	</div>
+	   			<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#"> Início</a></li>
+					  	<li><a href="#evento"> Latinoware</a></li>
+					  	<li><a href="#viagem"> A Caravana</a></li>
+					  	<li><a href="#fotos"> Fotos</a></li>
+					  	<li><a href="#videos"> Vídeos</a></li>
+	              	</ul>
+	            </div>
+			</div>
+		</div>
+		<div id = "main">
+			<div ng-view></div>
+		</div>
+		<div class="copy-right">
+			<p>Created By &copy; Marcos Fernando (Nerd)</p>
+		</div>
+	</body>
+</html>
+

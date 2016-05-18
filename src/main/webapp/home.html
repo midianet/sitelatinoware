@@ -1,0 +1,48 @@
+<!--start-image-slider-->
+<div class="content" style="margin: 0.5em 0em;" >
+	<div class="container">
+		<div class="grids">
+			<div class="clearfix"> </div>
+			<div class="section group">
+				<div class="col-md-3 we-do">
+					<div class="css-carousel">
+						<img class="css-img" ng-repeat="slide in slides1" src="images/slides/{{ slide.file }}"/>
+					</div>
+				</div>
+				<div class="col-md-3 we-do">
+					<div class="css-carousel">
+						<img class="css-img" ng-repeat="slide in slides2" src="images/slides/{{ slide.file }}"/>
+					</div>
+				</div>
+				<div class="col-md-3 we-do">
+					<div class="css-carousel">
+						<img class="css-img" ng-repeat="slide in slides3" src="images/slides/{{ slide.file }}"/>
+					</div>
+				</div>
+				<div class="col-md-3 we-do">
+					<div class="css-carousel">
+						<img class="css-img" ng-repeat="slide in slides4" src="images/slides/{{ slide.file }}"/>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="content">
+	<div class="container">
+		<div class="grids">
+			<div class="clearfix"></div>
+			<div class="section group">
+				<div class="col-md-3 we-do" ng-repeat="new in news">
+					<div class="active-grid">
+						<h3><img src="images/news/{{new.icon}}" title="{{new.title}}" alt="">{{new.title}}</h3>
+						<p>{{new.text}}</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>

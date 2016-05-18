@@ -1,0 +1,30 @@
+[
+  {
+    "id":"1",
+    "icon": "g1.png",
+    "title": "Inscrições",
+    "text":"Estão Abertas as incrições.",
+    "page": ""
+  },
+  {
+    "id":"2",
+    "icon": "g2.png",
+    "title": "Regulamento",
+    "text":"Leia o regulamento da caravana.",
+    "page": ""
+  },
+  {
+    "id":"3",
+    "icon": "g3.png",
+    "title": "Passeios",
+    "text":"Passeios sugeridos.",
+    "page": ""
+  },
+  {
+    "id":"4",
+    "icon": "g4.png",
+    "title": "Sugestões",
+    "text":"Sugestões da caravana.",
+    "page": ""
+  }
+]

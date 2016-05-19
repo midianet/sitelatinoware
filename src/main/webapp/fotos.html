@@ -1,29 +1,29 @@
-<div>
-	<p>&nbsp;</p>
-	<input type="button" ng-click="alert('aaaaa')"/>
-	<table at-table at-paginated at-list="gallery" at-config="config">
-		<thead>
-		</thead>
-		<tbody>
-			<tr>
-				<td style="width: 25%" >
-					<img src="images/gallery/{{item.foto1}}" style="padding: 5px 20px 5px 20px;" class="img-responsive" ng-click="alert('aki1');"/>
-					<p style="padding-left: 20px;" >{{item.title1}}</p>
-				</td>
-				<td style="width: 25%">
-					<img src="images/gallery/{{item.foto2}}" style="padding: 5px 20px 5px 20px;" class="img-responsive" ng-click="alert('aki2');"/>
-					<p style="padding-left: 20px;" >{{item.title2}}</p>
-				</td>
-				<td style="width: 25%">
-					<img src="images/gallery/{{item.foto3}}" style="padding: 5px 20px 5px 20px;" class="img-responsive" ng-click="alert('aki3');"/>
-					<p style="padding-left: 20px;" >{{item.title3}}</p>
-				</td>
-				<td style="width: 25%">
-					<img src="images/gallery/{{item.foto4}}" style="padding: 5px 20px 5px 20px;" class="img-responsive" ng-click="alert('aki4');"/>
-					<p style="padding-left: 20px;" >{{item.title4}}</p>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	<at-pagination style="margin-left: auto; margin-right: auto; text-align: center;"  at-config="config" at-list="gallery"></at-pagination>
+<div ng-show="gallery">
+
+    <table at-table at-paginated at-list="gallery" at-config="config">
+        <tr>
+            <td>
+                <div class="row">
+                    <div ng-repeat="sItem in item" class="col-xs-12 col-sm-6 col-md-3 col-lg-3"
+                         ng-click="openPhoto(sItem)">
+                        <img src="images/gallery/{{sItem.fotoReduzida}}" style="padding: 5px 20px 5px 20px; align-items: center;"
+                             class="img-responsive"/>
+                        <p style="padding-left: 20px;">{{sItem.titulo}}</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <at-pagination style="margin-left: auto; margin-right: auto; text-align: center;" at-config="config"
+                   at-list="gallery"></at-pagination>
+
+    <script type="text/ng-template" id="templateId">
+
+        <div >
+            <img src="images/gallery/{{itemCorrente.foto}}" style=" padding: 5px 20px 5px 20px; align-items: center;"
+                 class="img-responsive"/>
+            <p style="padding-left: 20px;">{{itemCorrente.titulo}}</p>
+        </div>
+    </script>
+
 </div>
